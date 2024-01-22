@@ -20,3 +20,17 @@ console.log(meses.length);
 meses.forEach( function(mes) {  //Se usa para interar y traer todos los valores de un arreglo
     console.log(mes);
 }); 
+
+numeros[6] = 70; //Es para agregar o modificar el arreglo dependiendo del index que coloques.
+numeros.push(80); //Para agregar mas datos al arreglo al final del index.
+numeros.unshift(-10,-20,-30); // Para poder agregar al principio del arreglo moviendo en index.
+console.table(numeros);
+
+// meses.pop();  //Es para eliminar el ultimo index del arreglo
+// meses.shift();  //Es para eliminar el primerer index del arreglo
+// meses.splice(3,1); //Para eliminar un numero especifico del arreglo. El 1er nuemro en la posicion del index y el 2do para la cantidad de eliminar.
+console.table(meses);
+
+//Rest Operator o Spread  Operator
+const newArreglo = [...meses, 'Julio','agosto']; //Los ... es para copiar el arreglo. Y agregar nuevos datos a este arrglo
+console.log(newArreglo);
